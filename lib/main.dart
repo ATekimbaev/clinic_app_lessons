@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:practice/ui/check_code_page.dart';
 import 'package:practice/ui/first_screen.dart';
-import 'package:practice/ui/login_screen.dart';
 
 void main() {
   runApp(const MyApp());

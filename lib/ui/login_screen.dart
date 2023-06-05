@@ -6,6 +6,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:practice/core%20/app_colors.dart';
 import 'package:practice/core%20/app_fonts.dart';
 import 'package:practice/core%20/common_widgets/app_button.dart';
+import 'package:practice/ui/check_code_page.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -88,7 +89,15 @@ class LoginScreen extends StatelessWidget {
                 onPressed: () {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text('${code.toString()}\n${controller.text}'),
+                      content: Text(code.toString()),
+                    ),
+                  );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => CheckCodePage(
+                        code: code,
+                      ),
                     ),
                   );
                 },

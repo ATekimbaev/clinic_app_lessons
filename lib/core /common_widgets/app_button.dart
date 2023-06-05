@@ -10,7 +10,7 @@ class AppButton extends StatelessWidget {
   });
 
   final String title;
-  final Function() onPressed;
+  final Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
