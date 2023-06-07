@@ -7,6 +7,7 @@ void main() {
   test('images assets test', () {
     expect(File(Images.bell).existsSync(), true);
     expect(File(Images.board).existsSync(), true);
+    expect(File(Images.car).existsSync(), true);
     expect(File(Images.cars).existsSync(), true);
     expect(File(Images.hospital).existsSync(), true);
     expect(File(Images.speech).existsSync(), true);
